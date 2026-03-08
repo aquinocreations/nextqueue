@@ -43,7 +43,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="flex items-center gap-6 text-sm text-teal-200">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 text-sm text-teal-200">
               <span className="flex items-center gap-1.5">
                 <span className="w-2 h-2 bg-teal-300 rounded-full" />
                 3-5 day delivery
