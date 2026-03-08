@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "NextQueue | Custom Personalized Travel Itineraries",
   description:
-    "Get a detailed, personalized travel itinerary crafted by world-traveled experts. Custom day-by-day plans, local tips, budget estimates, and authentic recommendations — starting at $297.",
+    "Get a detailed, personalized travel itinerary crafted by world-traveled experts. Custom day-by-day plans, local tips, budget estimates, and authentic recommendations. Starting at $297.",
   keywords: [
     "custom travel itinerary",
     "personalized travel plan",

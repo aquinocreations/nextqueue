@@ -101,7 +101,7 @@ export default function SampleItinerary() {
         </div>
 
         <p className="text-center mt-10 text-gray-500 italic">
-          …and much more tailored to you — full plans include 7-21+ days with
+          …and much more tailored to you. Full plans include 7-21+ days with
           detailed daily breakdowns.
         </p>
       </div>

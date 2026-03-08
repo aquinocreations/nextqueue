@@ -93,7 +93,7 @@ export default function Footer() {
               airlines, tour operators, and other suppliers are handled directly
               by the client. We do not guarantee availability, pricing, or
               specific outcomes from any third-party service. Travel involves
-              inherent risks — clients are responsible for their own travel
+              inherent risks. Clients are responsible for their own travel
               insurance, safety, and compliance with local regulations. Our
               service fee is non-refundable once the intake form has been
               submitted and itinerary work has begun.
@@ -106,7 +106,7 @@ export default function Footer() {
               reserved.
             </p>
             <p>
-              This is a planning and advisory service — not a travel agency or
+              This is a planning and advisory service, not a travel agency or
               booking platform.
             </p>
           </div>

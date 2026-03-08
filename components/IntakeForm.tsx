@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send, Loader2 } from "lucide-react";
+import { Send } from "lucide-react";
 
 interface FormData {
   name: string;
@@ -23,8 +23,7 @@ export default function IntakeForm() {
     budget: "",
     interests: "",
   });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   function handleChange(
     e: React.ChangeEvent<
@@ -36,32 +35,7 @@ export default function IntakeForm() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setError("");
-    setLoading(true);
-
-    try {
-      const res = await fetch("/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error || "Something went wrong");
-      }
-
-      if (!data.url) {
-        throw new Error("No checkout URL returned");
-      }
-
-      window.location.href = data.url;
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "An error occurred");
-    } finally {
-      setLoading(false);
-    }
+    setSubmitted(true);
   }
 
   const inputClasses =
@@ -82,8 +56,8 @@ export default function IntakeForm() {
             Get Started
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Tell us about your dream trip. After submitting, you&apos;ll be
-            directed to secure payment via Stripe.
+            Tell us about your dream trip and we&apos;ll get back to you with
+            a personalized plan.
           </p>
         </div>
 
@@ -227,33 +201,24 @@ export default function IntakeForm() {
               />
             </div>
 
-            {error && (
-              <div className="bg-red-50 text-red-700 rounded-xl p-4 text-sm">
-                {error}
+            {submitted && (
+              <div className="bg-teal-50 text-teal-brand rounded-xl p-4 text-sm font-medium text-center">
+                Thanks! We&apos;ve received your details and will be in touch soon.
               </div>
             )}
 
-            <button
-              type="submit"
-              disabled={loading}
-              className="w-full bg-teal-brand text-white font-semibold py-4 rounded-xl hover:bg-teal-dark transition-colors text-lg flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
-            >
-              {loading ? (
-                <>
-                  <Loader2 className="w-5 h-5 animate-spin" />
-                  Processing…
-                </>
-              ) : (
-                <>
-                  <Send className="w-5 h-5" />
-                  Submit & Pay $297 Now
-                </>
-              )}
-            </button>
+            {!submitted && (
+              <button
+                type="submit"
+                className="w-full bg-teal-brand text-white font-semibold py-4 rounded-xl hover:bg-teal-dark transition-colors text-lg flex items-center justify-center gap-2"
+              >
+                <Send className="w-5 h-5" />
+                Submit Your Trip Details
+              </button>
+            )}
 
             <p className="text-xs text-gray-500 text-center">
-              You&apos;ll be redirected to Stripe for secure payment. Your
-              information is encrypted and never shared.
+              Your information is kept private and never shared.
             </p>
           </form>
         </div>

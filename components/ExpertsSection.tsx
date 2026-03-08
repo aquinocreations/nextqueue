@@ -54,7 +54,7 @@ export default function ExpertsSection() {
                   With years of hands-on exploration across Asia, Europe, South
                   America, and Africa, Alex brings a rare depth of real-world
                   travel knowledge. Every itinerary is built from personal
-                  experience — not recycled blog posts or generic tour packages.
+                  experience, not recycled blog posts or generic tour packages.
                 </p>
 
                 <ul className="space-y-3">

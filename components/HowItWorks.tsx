@@ -43,7 +43,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            From your first click to your first adventure — here&apos;s how we
+            From your first click to your first adventure, here&apos;s how we
             build your perfect trip.
           </p>
         </div>

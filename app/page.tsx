@@ -6,18 +6,21 @@ import SampleItinerary from "@/components/SampleItinerary";
 import Pricing from "@/components/Pricing";
 import IntakeForm from "@/components/IntakeForm";
 import Footer from "@/components/Footer";
+import PasswordGate from "@/components/PasswordGate";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <HowItWorks />
-      <ExpertsSection />
-      <SampleItinerary />
-      <Pricing />
-      <IntakeForm />
-      <Footer />
-    </main>
+    <PasswordGate>
+      <main>
+        <Navbar />
+        <Hero />
+        <HowItWorks />
+        <ExpertsSection />
+        <SampleItinerary />
+        <Pricing />
+        <IntakeForm />
+        <Footer />
+      </main>
+    </PasswordGate>
   );
 }

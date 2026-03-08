@@ -30,7 +30,7 @@ export default function Hero() {
             <p className="text-lg sm:text-xl text-teal-100 leading-relaxed max-w-xl">
               Authentic, personalized plans led by a world-traveled curator with
               hands-on experience across multiple continents. No cookie-cutter
-              trips — just real insights from real explorers.
+              trips. Just real insights from real explorers.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -39,7 +39,7 @@ export default function Hero() {
                 className="inline-flex items-center justify-center gap-2 bg-white text-teal-brand font-semibold px-8 py-4 rounded-xl text-lg hover:bg-teal-50 transition-colors shadow-lg shadow-black/20"
               >
                 <MapPin className="w-5 h-5" />
-                Get Your Custom Plan – Starting at $297
+                Get Your Custom Plan
               </a>
             </div>
 

@@ -9,7 +9,8 @@
       "Bash(npx tsc:*)",
       "Bash(npm run:*)",
       "Bash(cp:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(gh repo:*)"
     ]
   }
 }
