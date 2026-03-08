@@ -1,0 +1,10 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#e0f2f1"/>
+  <rect x="180" y="120" width="80" height="100" rx="4" fill="#0f766e" opacity="0.15"/>
+  <rect x="280" y="140" width="60" height="80" rx="4" fill="#0f766e" opacity="0.2"/>
+  <rect x="360" y="160" width="50" height="60" rx="4" fill="#0f766e" opacity="0.12"/>
+  <circle cx="480" cy="80" r="30" fill="#0f766e" opacity="0.1"/>
+  <line x1="100" y1="220" x2="500" y2="220" stroke="#0f766e" stroke-width="2" opacity="0.15"/>
+  <text x="300" y="280" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#0f766e" font-weight="600">Day 1 — Arrival</text>
+  <text x="300" y="310" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#0f766e" opacity="0.5">Hidden gems await</text>
+</svg>
