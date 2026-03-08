@@ -11,7 +11,8 @@
       "Bash(cp:*)",
       "Bash(ls:*)",
       "Bash(gh repo:*)",
-      "Bash(npx vercel:*)"
+      "Bash(npx vercel:*)",
+      "Bash(curl:*)"
     ]
   }
 }

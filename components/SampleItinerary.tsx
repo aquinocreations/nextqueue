@@ -10,10 +10,10 @@ import {
   Landmark,
   CookingPot,
   ShoppingBag,
-  Palette,
+  TreePine,
   Mountain,
-  Binoculars,
-  Salad,
+  Ship,
+  Bike,
   type LucideIcon,
 } from "lucide-react";
 
@@ -25,37 +25,37 @@ interface Activity {
 const days = [
   {
     day: "Day 1",
-    title: "Arrival & Hidden Gems",
+    title: "Bangkok to Chiang Mai",
     headerIcon: MapPin,
     activities: [
-      { text: "Airport pickup tips & transit guide", icon: Plane },
-      { text: "Check into curated boutique accommodation", icon: Hotel },
-      { text: "Evening walk through a secret local neighborhood", icon: Footprints },
-      { text: "Dinner at an off-the-beaten-path restaurant", icon: Utensils },
+      { text: "Morning flight from Bangkok to Chiang Mai", icon: Plane },
+      { text: "Check into a boutique guesthouse near the Old City", icon: Hotel },
+      { text: "Walk through Tha Phae Gate and the temple district", icon: Footprints },
+      { text: "Dinner at a family-run khao soi spot the locals swear by", icon: Utensils },
     ] as Activity[],
     image: "/sample-day1.jpg",
   },
   {
     day: "Day 2",
-    title: "Cultural Deep Dive",
+    title: "Chiang Mai Highlands",
     headerIcon: Camera,
     activities: [
-      { text: "Morning visit to a lesser-known historic site", icon: Landmark },
-      { text: "Authentic cooking class or artisan workshop", icon: CookingPot },
-      { text: "Lunch at a locals-only market", icon: ShoppingBag },
-      { text: "Afternoon exploration of street art district", icon: Palette },
+      { text: "Drive to Doi Inthanon, Thailand's highest peak", icon: Mountain },
+      { text: "Trek through hill tribe villages with a local guide", icon: Footprints },
+      { text: "Cooking class at an organic farm using market ingredients", icon: CookingPot },
+      { text: "Night bazaar for handmade crafts and street food", icon: ShoppingBag },
     ] as Activity[],
     image: "/sample-day2.jpg",
   },
   {
     day: "Day 3",
-    title: "Nature & Adventure",
+    title: "Chiang Rai & the Golden Triangle",
     headerIcon: Sunset,
     activities: [
-      { text: "Sunrise hike to a panoramic viewpoint", icon: Mountain },
-      { text: "Visit to a natural wonder off the tourist trail", icon: Binoculars },
-      { text: "Picnic lunch with local specialties", icon: Salad },
-      { text: "Sunset experience with curated recommendations", icon: Sunset },
+      { text: "Early drive to the White Temple (Wat Rong Khun)", icon: Landmark },
+      { text: "Boat ride along the Mekong at the Golden Triangle", icon: Ship },
+      { text: "Cycle through rural Chiang Rai tea plantations", icon: Bike },
+      { text: "Sunset over the hills from a quiet riverside spot", icon: Sunset },
     ] as Activity[],
     image: "/sample-day3.jpg",
   },
@@ -74,11 +74,11 @@ export default function SampleItinerary() {
             Preview
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-            Sample Itinerary
+            Sample Itinerary: Northern Thailand
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Here&apos;s a glimpse of what your custom plan might look like.
-            Every itinerary is unique to your preferences.
+            A peek at 3 days from a real itinerary. Your plan will be
+            fully tailored to your destinations, pace, and interests.
           </p>
         </div>
 
