@@ -1,4 +1,4 @@
-import { Mail, Globe } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -7,10 +7,9 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Globe className="w-6 h-6 text-teal-light" />
-              <span className="text-white font-bold text-lg">
-                NextQueue
+            <div className="mb-4">
+              <span className="font-display text-2xl font-extrabold tracking-tight text-white">
+                Next<span className="text-teal-light">Queue</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed">

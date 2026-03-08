@@ -44,7 +44,9 @@ export default function PasswordGate({
             <div className="w-14 h-14 bg-teal-50 rounded-full flex items-center justify-center mb-4">
               <Lock className="w-7 h-7 text-teal-brand" />
             </div>
-            <h1 className="text-xl font-bold text-gray-900">NextQueue</h1>
+            <h1 className="font-display text-3xl font-extrabold tracking-tight text-gray-900">
+              Next<span className="text-teal-brand">Queue</span>
+            </h1>
             <p className="text-sm text-gray-500 mt-1">
               Enter the password to continue
             </p>

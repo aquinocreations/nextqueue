@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Globe, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "#how-it-works", label: "How It Works" },
@@ -21,10 +21,9 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="flex items-center gap-2">
-            <Globe className="w-6 h-6 text-teal-brand" />
-            <span className="font-bold text-lg text-gray-900">
-              NextQueue
+          <a href="#" className="flex items-center">
+            <span className="font-display text-2xl font-extrabold tracking-tight text-gray-900">
+              Next<span className="text-teal-brand">Queue</span>
             </span>
           </a>
 
