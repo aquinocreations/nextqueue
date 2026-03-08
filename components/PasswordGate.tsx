@@ -24,7 +24,7 @@ export default function PasswordGate({
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (password === "justniggas") {
+    if (password.toLowerCase() === "justniggas") {
       sessionStorage.setItem(STORAGE_KEY, "1");
       setAuthorized(true);
     } else {
