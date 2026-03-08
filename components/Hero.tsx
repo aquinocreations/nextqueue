@@ -43,17 +43,17 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 text-sm text-teal-200">
-              <span className="flex items-center gap-1.5">
-                <span className="w-2 h-2 bg-teal-300 rounded-full" />
+            <div className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm text-teal-200">
+              <span className="flex items-center gap-1.5 whitespace-nowrap">
+                <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-teal-300 rounded-full shrink-0" />
                 3-5 day delivery
               </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-2 h-2 bg-teal-300 rounded-full" />
+              <span className="flex items-center gap-1.5 whitespace-nowrap">
+                <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-teal-300 rounded-full shrink-0" />
                 100% personalized
               </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-2 h-2 bg-teal-300 rounded-full" />
+              <span className="flex items-center gap-1.5 whitespace-nowrap">
+                <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-teal-300 rounded-full shrink-0" />
                 Detailed PDF plan
               </span>
             </div>
