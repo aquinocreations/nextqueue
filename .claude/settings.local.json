@@ -10,7 +10,8 @@
       "Bash(npm run:*)",
       "Bash(cp:*)",
       "Bash(ls:*)",
-      "Bash(gh repo:*)"
+      "Bash(gh repo:*)",
+      "Bash(npx vercel:*)"
     ]
   }
 }

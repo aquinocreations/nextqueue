@@ -1,41 +1,62 @@
 import Image from "next/image";
-import { MapPin, Camera, Coffee, Sunset } from "lucide-react";
+import {
+  MapPin,
+  Camera,
+  Sunset,
+  Plane,
+  Hotel,
+  Footprints,
+  Utensils,
+  Landmark,
+  CookingPot,
+  ShoppingBag,
+  Palette,
+  Mountain,
+  Binoculars,
+  Salad,
+  type LucideIcon,
+} from "lucide-react";
+
+interface Activity {
+  text: string;
+  icon: LucideIcon;
+}
 
 const days = [
   {
     day: "Day 1",
     title: "Arrival & Hidden Gems",
-    icon: MapPin,
+    headerIcon: MapPin,
     activities: [
-      "Airport pickup tips & transit guide",
-      "Check into curated boutique accommodation",
-      "Evening walk through a secret local neighborhood",
-      "Dinner at an off-the-beaten-path restaurant",
-    ],
+      { text: "Airport pickup tips & transit guide", icon: Plane },
+      { text: "Check into curated boutique accommodation", icon: Hotel },
+      { text: "Evening walk through a secret local neighborhood", icon: Footprints },
+      { text: "Dinner at an off-the-beaten-path restaurant", icon: Utensils },
+    ] as Activity[],
     image: "/sample-day1.jpg",
   },
   {
     day: "Day 2",
     title: "Cultural Deep Dive",
-    icon: Camera,
+    headerIcon: Camera,
     activities: [
-      "Morning visit to a lesser-known historic site",
-      "Authentic cooking class or artisan workshop",
-      "Lunch at a locals-only market",
-      "Afternoon exploration of street art district",
-    ],
+      { text: "Morning visit to a lesser-known historic site", icon: Landmark },
+      { text: "Authentic cooking class or artisan workshop", icon: CookingPot },
+      { text: "Lunch at a locals-only market", icon: ShoppingBag },
+      { text: "Afternoon exploration of street art district", icon: Palette },
+    ] as Activity[],
     image: "/sample-day2.jpg",
   },
   {
     day: "Day 3",
     title: "Nature & Adventure",
-    icon: Sunset,
+    headerIcon: Sunset,
     activities: [
-      "Sunrise hike to a panoramic viewpoint",
-      "Visit to a natural wonder off the tourist trail",
-      "Picnic lunch with local specialties",
-      "Sunset experience with curated recommendations",
-    ],
+      { text: "Sunrise hike to a panoramic viewpoint", icon: Mountain },
+      { text: "Visit to a natural wonder off the tourist trail", icon: Binoculars },
+      { text: "Picnic lunch with local specialties", icon: Salad },
+      { text: "Sunset experience with curated recommendations", icon: Sunset },
+    ] as Activity[],
     image: "/sample-day3.jpg",
   },
 ];
@@ -87,11 +108,11 @@ export default function SampleItinerary() {
                 <ul className="space-y-2.5">
                   {day.activities.map((activity) => (
                     <li
-                      key={activity}
+                      key={activity.text}
                       className="flex items-start gap-2 text-sm text-gray-600"
                     >
-                      <Coffee className="w-4 h-4 text-teal-brand shrink-0 mt-0.5" />
-                      {activity}
+                      <activity.icon className="w-4 h-4 text-teal-brand shrink-0 mt-0.5" />
+                      {activity.text}
                     </li>
                   ))}
                 </ul>

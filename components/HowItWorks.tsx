@@ -48,24 +48,26 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-8">
           {steps.map((step) => (
             <div
               key={step.step}
-              className="relative bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+              className="relative bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4 sm:flex-col sm:items-stretch sm:gap-0"
             >
-              <span className="absolute -top-3 -left-3 w-10 h-10 bg-teal-brand text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">
+              <span className="sm:absolute sm:-top-3 sm:-left-3 w-10 h-10 bg-teal-brand text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md shrink-0">
                 {step.step}
               </span>
-              <div className="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-4">
-                <step.icon className="w-6 h-6 text-teal-brand" />
+              <div>
+                <div className="hidden sm:flex w-12 h-12 bg-teal-50 rounded-xl items-center justify-center mb-4 sm:mt-2">
+                  <step.icon className="w-6 h-6 text-teal-brand" />
+                </div>
+                <h3 className="text-base font-semibold text-gray-900 mb-1 sm:mb-2">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {step.description}
+                </p>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {step.title}
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {step.description}
-              </p>
             </div>
           ))}
         </div>
