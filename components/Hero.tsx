@@ -59,10 +59,31 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Expert Photo */}
+          {/* Fanned photo stack */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+              {/* Back card - rotated left */}
+              <div className="absolute inset-0 -rotate-6 -translate-x-4 translate-y-2 rounded-2xl overflow-hidden shadow-xl border-4 border-white/15">
+                <Image
+                  src="/sample-day3.jpg"
+                  alt="Mountain adventure destination"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 288px, (max-width: 1024px) 320px, 384px"
+                />
+              </div>
+              {/* Middle card - rotated right */}
+              <div className="absolute inset-0 rotate-3 translate-x-2 -translate-y-1 rounded-2xl overflow-hidden shadow-xl border-4 border-white/15">
+                <Image
+                  src="/sample-day2.jpg"
+                  alt="Cultural travel destination"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 288px, (max-width: 1024px) 320px, 384px"
+                />
+              </div>
+              {/* Front card - main */}
+              <div className="absolute inset-0 rotate-0 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 hover:-translate-y-2 transition-transform duration-500">
                 <Image
                   src="/advisor.png"
                   alt="Lead travel curator exploring a destination"
@@ -72,7 +93,7 @@ export default function Hero() {
                   sizes="(max-width: 640px) 288px, (max-width: 1024px) 320px, 384px"
                 />
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-white text-teal-brand rounded-xl px-4 py-2 shadow-lg font-semibold text-sm">
+              <div className="absolute -bottom-4 -left-4 bg-white text-teal-brand rounded-xl px-4 py-2 shadow-lg font-semibold text-sm z-10">
                 40+ Countries Explored
               </div>
             </div>
