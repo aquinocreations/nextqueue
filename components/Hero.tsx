@@ -85,8 +85,8 @@ export default function Hero() {
               {/* Front card - main */}
               <div className="absolute inset-0 rotate-0 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 hover:-translate-y-2 transition-transform duration-500">
                 <Image
-                  src="/advisor.png"
-                  alt="Lead travel curator exploring a destination"
+                  src="/sample-hero.jpg"
+                  alt="Scenic travel destination"
                   fill
                   className="object-cover"
                   priority
