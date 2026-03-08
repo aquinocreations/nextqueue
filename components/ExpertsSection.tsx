@@ -34,14 +34,14 @@ export default function ExpertsSection() {
                 <div className="w-48 h-48 rounded-2xl overflow-hidden shadow-lg mb-4">
                   <Image
                     src="/advisor.png"
-                    alt="Alex Rivera, Lead Travel Curator"
+                    alt="Alessandro Amoedo, Lead Travel Curator"
                     width={192}
                     height={192}
                     className="object-cover w-full h-full"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">
-                  Alex Rivera
+                  Alessandro Amoedo
                 </h3>
                 <p className="text-teal-brand font-medium text-sm">
                   Lead Travel Curator & Global Explorer
